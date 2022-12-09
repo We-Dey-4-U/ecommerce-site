@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>popup</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css.css.css.css.css" />
+</head>
+<body>
+
+
+<section id="header">
+    <a href="#"><img
+            src="https://media.istockphoto.com/id/1427963203/vector/simple-icon-material-of-a-hand-holding-0-yen.jpg?s=612x612&w=0&k=20&c=stkMBqeePEKsIem9cWplKiQB9-FXOwWDY6fhz2vk74Y="
+            class="logo" alt="" style="width: 40px; height: 30px;"></a>
+
+    <div>
+
+        <ul id="navbar" style="margin-left: 350px;">
+
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="community.html">Communinty</a></li>
+
+
+
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+            <li><a href="login.html">Login</a></li>
+            <li><a onclick="window.location.href='login.html'" href="login.html">signup</a></li>
+            <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+
+        </ul>
+    </div>
+
+
+
+
+    <!-------dropdown-----settings-menu with switch to dark mode------------------->
+
+    <div class="nav-user-icon online" onclick="settingsMenuToggle()" style="color: #088170;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsc3lDrbuSZvprAjCmtuzIraPd8zHYaNFuZQpHV1oSsg&s"
+            alt="" style="color: #088170; height: 20px;">
+    </div>
+    </div>
+
+    <div class="settings-menu">
+
+        <div id="dark-btn">
+            <span></span>
+        </div>
+
+
+
+        <div class="settings-menu-inner">
+            <div class="user-profile">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHkAvAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAQMEBgcAAgj/xABQEAACAQMBBAcDBwgGBQ0BAAABAgMABBEFBhIhMRMiMkFRYXEHgZEUFSMzobHBNUJDUlNy0fAkYnOiwvE0NnSz0kRGVGOCg5KjssPT4eIX/8QAGQEAAgMBAAAAAAAAAAAAAAAAAQIAAwQF/8QAKxEAAgIBAwMEAAYDAAAAAAAAAAECEQMSITEEQVETIjLwYXGBkaHBBTNC/9oADAMBAAIRAxEAPwDZbe9jnDunCBP0jHAPj7vOh9zfT3p6GxMkaH9KFG97geAHmaBaPf2+s2jzKXGmQN1Xbh0zDvx5YAHoT6F7G4vryM/J4lt4vcWJ8zyHpxpW/Jn9Ry2H1jt9Liae9uI1nnwGdjktjko7zzPx91ANroJ9W0ww6YOk6FhLKjLubw7gM9/fg1Yl0hFbpJHZmI4kcz6sePwxUHaFJbbZ/UDZRZZYH3UTnxHE0sotprsX4XJSRh+rqDdQyeKt+FJaJmVT5/hTtyodbVu4tj7DTsCFXXxytZY/BHV/7NJ9nrILC8hdOsHV857iMfhVx01od8hAAfWqjsHZk2V1cAcWcRj0Az+NWywtNyQPxzV+D/WjH1FeowjJKkSF5XVFHNmOAKZF/Zt2bu3PpKv8aC7X6LZ7QGy03UulNq7PIyxyFSSq8OXqaqjeyvY8t2dRU+VwPxFaEl3M25pKzwt2ZYz6MK9hgeRBrMj7JtlsdWXVAD/1qn/DXg+yXZ8fV6jqsfvT/ho1HyTc1GurLf8A+Vaav1e0OsR+hX+Feh7MI1+p2u1lf+1mpS8gtmoV1Zkvs5vU+p221UD+sH/4hXHYLXlH0O3t6vhvQyH/ANypUfIbfg02urMhsVtcn1e30h/egf8A+SnBsrtwo6m3CNjxiP8AE1NK8kv8DSc0tZuNnvaAvY2wtW8Mp/8Amj2yo2jsr6Sx2jvra+6SEywyRLgrukAg8Bw6woaV5JZaq6urqARuSZIyA5IB4ZxwHvr3vChsV0W1m6tJDldxWRT6caVnfOIYZZEXh1ZN3d8j/PhS6hbKxommRSt82W8rwwW8ajqcwORGfHPDPlVvhja1iWOOJTGnACPgR7qgbM2UNtayyRdZpJG338SD9wOaM0V5ExxpWM9MkqkI2WHMd49RUCTej32dwIwMsT4edT7iCOVcvwYdlhzFQH313kkxIpGCcd3mKPYsswzWJoprppbaMRwtdFkUclBJGPtpB2T6A1723Ftp+tXdvYoY4I3Vt08geBOPKoKXqOCV5FaxpNI6Skm7RpuwVzL0l7GhHR7qnHnmrlZzztKFIXFZ57O9TPy+S1WAOssO+zDmu7/nWgwXfRvgW8hyfKren+FGbqfmOal+UdP9Jv8A0VHFPagwa/0045mX/dmmwBirzOIKWuxS4qEOr0OODSCvcfYoN0PCOo4Vzdk+lKTUK+vVgeCD9JcP0aDz/kGk1pDvE+zJ3fXqoQlznJ5HB499KMv2auq1ZncmtiZwpmHjr8X9Wyb7XH8KdjG7Eo4Z78d9R7Y52jkX9WwT7ZH/AIUBgzXV1dQIRrizjnYORuyjsyLwZf58KH3ui/KpulZ5Q5UBjHMYwx8cCjNdQpCuKYI2dlgSyitUuFaVEDOhOGBPEnB44zmjAoVbRJDGscShVUADAoovAVIppbh2XA1c7xjIQ4buNBJxqiyEqsDjzJFH2GaZK0QmPbY2t9Pf3FprVjbXMLxNNFcxzCOa1X+u2Mbmc86o+o7P6pp0NtOFdobpgkRbqEluRIPIHuzW3XuyUWqatqPzndTS29wInjiU7oABOQwHa7ufj76NLpGlWkO8LG0jjjGc9EvADvzippVEWSRhuzN3tLoWodFbRwRyzJuASRifex3AI2f8q0fRtV2veTN/a6UqdwKPGze7eOKL6Xs7Z2ZGrQWEUd/JM87bqgNuPnqeXVI4eIox84wZ+it7iV+W6sDD7SAPtorYDk5O2DYL+e81CxS6gSGaK4kRgjbyn6EtkH30UhbdByOHAj1qHJE0d9pjyKqyzXUrsq8hmJ8D4AVPiKqoyCesDQIhB0YbI49b4CvMoXIK8M5Jpz6P9Xh5cxS4QqSCud3HH0qBI+KQHqfGnZwoI3BnJIyO6h+o3LWlpLIgBZQSATgGkyOlZbi5ZKIyGB/nnUaRt0MrEdXIyT3V4067kvkEwRBCV4HPHe45Hlim74li5RWdRxOBn7vSk1JpNDYndke3e6ncKDB1t4qArcgSBnzqdazOskkVwEDIRjdPPh599C7RpredMNE+4NzdfeQ4z44Ner6dvp7hF6+So47wzgcO6rXK0K4RSpclijcOmRnGe8YqNZf6z3Xlp9v9sk38KXTHeSyiaRd1jjIHjiusRnaTUDnlZWq/3pjRTsqDNdSY8zXdbuI99QgtJmk63lUW5smnk3/lFxFwxuxS4H3UHZDxAM486cS/hlnlht3jleEgSKjglD5jurxABGqkuSf57qzPaK41iK8ksNBsbyS9dg8kqAqqAnmDyPqeFR2C0uTT/lqA4kjdTXC+tyeL4/eUisun2lvNBsYrfUb1rrVpG4ohMkUYzyJU53qPfPptdOin1gRJcPgi3hkLOF8WBHV95qS1R5RbjxvL8N+2xcpFiuMMk+44GA0bDIB502unRsytNLNcFeIEr5X13Rw+ygHzjENL+cDFcLEewskY3n/d61OafqtvdW0lykjwxxthumVo/h4+7NKsm9CyxSju0WbcHfS7tC7a86aMywz9JGvNlcYHrmpUc7sMht4f1cH7qexatWM6l+UdJ/2l/wDcyV4ka4V92OLeTHPNJeszahpOf+kv3Y/Qy1NMZ71Pwoc8Bi6IcUkzErJEVA5HPOnMnwp/dYd32Um6aJG7GCxxQjWZh0Qi3QxkYjrPujHPnR7dpqa1hnTcmjR1znDKDSyjqHxz0gTTJoPkSpZKViKlsFcE8SCfjmntMdYerJlTvE8vPNEEsYIQehiRQTkgDFILMFjzGR48KGKOnkGSSlGkBdY1pzNu2Um6keMtu4yTvZHHu4Cu0C4bVLi4gvURkVd4bo3SSe84NF20qGQHfCkHnwpLHS7XTZpJoRutKAp7ge+ncYt8FS1KPJNRFjAVOCjkKi6Zx1/VD4Q2y/Y5/Gpff5VG0njrWsN4NCv/AJYP40duwyvuF66urqBDq6urqhAHpDPdsLq5WEYA6JY5S4HieQHlRG4iymQG4cd1eGaC2OtWghmZbppEj3V3Fg3SMnuHvFHOl3k3lWQ5GeVNki4leL3wsrd9prwF59OjtLCVj1p2Teb3c8fCqvJpOlvqQu5obvW9Rz2jlYwe7Pfj7K0BUDO29bLHvftHzve7/wCq9GHJ3DNhG4bqLilh1MsT0y3izFm6SanrxSr723r+GUA6Jql7qZu9odTijtUOUs1zIwH6owcqPeT6UYsZtVvpPk50uO30yPstE6kEDyOOt7zR6PQrO3kaW1t0jmb9I3W+w8KdWMxri+mExz+aN3Fack8Mt6r795NXTdR1qShN2l+v39iBaz6TNG9kLWWEDjJ01uyg+ZbGD8an2NvpvQMLCdChPF4Zc/dXm41O3t1CAEDwHHNDJtW6rvFCY+PaCAZrDOeLsjoRhkktxnb2EjQc2/zjNNHMrxfIWIlBwRwI8mPPhWVXlztnZQmeLUtqYYlOCJlEmB54J4edXh9p7mG6dJyXjz1d7lio020Wnzsd+JkdTwMcrDFVrLXBaun8mdJ7RdrIyVh2qnOOZe1jbHv3TUqD2r7XxgFtZs5h3GWzC5+AFH9Z0+z1iF5YrSC9k5soYRzjuyG4BuFZtqNqguiLeGaECQpuzAbyceqpzjuBPHu4nnV8JqXBRlxOBdo/bFtWh67aNKPAxkf4qmx+2faEY6TSdIk/dkYfjWZtZ9eXcBKbu9H1SSwPZ4Zyc5zw9eFMva7kCOVPEsMYPId/x76einY16L21akB9JsrDJ5x3ZH+E1Kg9t0X/ACvZa5jPf0dyH+9RWMGzX5QYTjeHPjg5AyefL38qSJJTEWSRwAVGEfPPlUomxuUftt0QkCXRdVj8wEb8amRe2bZNsdJHqcXrb5x9tYJ/Sgy7s0mJFyvW8Tjjx8q99Jdr0oErkx5ZsryA4eHjRolI+hIva1sW4y1/dR5/Xs5PwU0c2K1iw19tY1LSpjPaPdqiSFGTO7DHngwB51hfs/2duNoJ5Jrlh8miwhxGBvNz548K+gtGgtNG0yKzto0jVBwVVxk+NJq3oLjUdQYrqhJqH7aF081647vD1p+O4hlGY5Ub0PnijQo7Sb1cTgVHYkt2jRSsBmtpr6S71uNqNRuHXrMsVjuvjyOauWkTme0SQRX7gjH9IwpPmRUgW3RtvNfTsfEBFz8BmvN1emNMRE/EnFJkzp8lmHDJQ0rgSC3cSljaCLcbKPLMWJzz4DFS572KFeLcfKqzqGoTgdR+IoDe6pOd4Syce6srztqkao9OlvIs+o7RQwk9c1V9Q20EU3IEeNVzVLt5FYs/nk1VbySZzvFHKZ57vClSlLksuMeDSrfaqwuW3Zn6MnkeJqazteQb9pfpLJ+ahkVc+XGsdWcK3aANSYNQkgYEFeeeeKb0grKu5dto1+SxE39ldG6xjOGCDPmOB+NUtLCSRjLNcmxgbiS8xJb0z+FWDTtp9Zjbes7mUp+pneFEk21vujlF5NEw71kCkUfjwS1JlPSOeZ47XZ75XcShs9NIRu/DGatD+z/UdZghfWdWkWeNSqqkIZUB7uJyatOwF9a609wbeK3BhA3jHgEk58Ku6WgUDAo3LsCSjVMxuT2Wah0pmh12MyE5y9njBxjPaI5cKiN7LtbgiZbe9sm3t0k4dSd3kO/hx5fwrXto9W0/ZzS5NR1KQJEnBVHakbuVfOqRsAm0W1GsybTajK1ppbdW1tccJAOWPADPPv8ASrYyyeSiUcV7Iqk/s7183MUVvHbSWy9QAXTAsM5YnI7+J5+XdTM+wW0iz3bnSpjGySNGBPCeuchcAHnj4eoFb/DaqpJ3ePdTjQgceQoepNbsVwx8I+bJdkdfS0SSbSb1LhZQAfkyyEIF8uQB9cn0qRpWwuv6hedDHbGMSw/TTXMRjCb5yV58WxjkO/Fb/eTCIFVR90j61eODUOKC8uWA+jnh/aElGX+ffWHJ/k7n6WJXIPpKrfBB2Y0a32e0e20+3KM8S5kZlK77ntEceGT51Y7VJJFPSBl/f45pbWyS3XBd5T3FznHpUlOGc8hT9H03Uwm8mbJd9vv9FeScZKkjkhROwuM8/OvM0UTsC6gt48jw8697wbgpobeavHDKbezja7uv2cZ4L6nurotvsV15HZhJDEzLK8aKOLMwKjh51Bt9aMyF4YJLmPeIEqJug05HpU96wl1mQS47NugxGvqO/wB9FhGoACjAHICjFNcsVtPgzb2e7YHXdNa11Fh85WgAkP7VO5/swfP1qw3dwo5ECsA2Y1CbT9o7GeJguZOjfHJlbgQf57q1+e6eQHJHCqOtxKGTbhmro8mvHvyjzqF4BnjmgywXF/dCC3QvIePPgo8Se4edLqFzuMEjUyTN2VH3mp2i6RqEwJdyit2t3vqjHjvdl2TJpQ9Np+m6Rb72Ev74jtsMoh8l/E1TtQ0681O4Z5C7ZPhWr2WzsSr9J1vWisOk28YAES+4Vr0eDG8hhDbFqQXmJRQCWZ+AAHMmq/HBbLPKV01Z7dD25JihI5A4861Pb3VEvJ20rT90W8TfTyL+kYHs+g++qvHp8LYEkaN4bwzV0MfkqeV2CbWw0ebi2mTw+ccu/wDeKO2Wk7NDHTS6nD+7yH96pFto8DEbsCj90Y+6iCaExXq7y/8Aemn9GInqvsyTZLosCBbXavV7UDku6SPxqTqmqPoNgNQm21upIM9WI2q9JJ5KGX7ah2kEOjX8Et4nTK+QglIZBjy8aIe0zZ87Z6FA+nPD8utm3kR2wGU8xnurPkUIypGrHra1MzG81DVPaVr5a6dktrdCYoF4iNeXxPea0/RdW1owfN7yKpjUCPdGCAOQ4VWtmtNOxujul1GnzndN9LukNuKOyuR8ffRDSrwrdB8kZ5ms+SdvY044JcmpQXpWxWSXBcKN71qr3O2tzY3ckV5od+bfewW3VZQPFWB4j3USs543txvPz4CiW7JcWgROSjGPCmj7tinIlEHaVr+z9/KGhuuhlP6KbKEfGrEhBUbpUrjhu8qouuaC8u83Qgnx3aqrnW9Ib+gXdxCB+bvEr8DRxYoYr0RSsqk9XLNQ1LXLSycwM30viVO6D6j8Kr95eG7kW4acu6EbptrjH9w5+6qS/tJ17TxualZQXsI5ndwcehzV42F17StZtDdQQosxJJCjGPLHcaR4ss525UvwNGPNjxQ9sfd+YStLTVr+NlvLqSC1YdjAEjDzI5UZs7O1sIhFbRrGuOPiaae5mkH0Fu7jxbgKYMOqTOvWtoUz1i2XJHgByH21sUaMcpuTsnvcKOzlvSob6kgYjpYf/GK9Np0UmPlMskuPzTwFL8isRw+TofNsk02wu58nWUhF5ascDEyEnPLrCtkV5ryUwWK77E9aTHVX+NYjF24/31++voTYb/RV/nvpeqWpxsbA9MXRP0TZeO3+km+klPEu3MmrRb2qRqAqge6lg7FSEpEkgttihMVV9tde+QQHT7N/6XMvXYH6pD+Jq2Csl2o/1m1D+0/AVZjSbK5ukCBBn3U7HbDfDYBx3V6T86nou1WpIosJWjKABjFFocEDBFBbfnRW25CowIqftCa1g1DRptTuLmCzDSAyW4HBzu43s92M03Z6xcadclHdXA7Dj85ccCDXj2u/kW2/taCt+StL/wBmrJngmrNvTTadFt+VWt99JId6Q8fWpVlbQswwhFVbSPrUq4WXaWudPY6MXaDNqm7Hudw4g5qxaXcs0iAEHePWFV+P6s+lFdC/0mP1/Cmxv3CZUtJYZI1YcQDQ280m3nU70a59KKmvBrac4pGrbHQXIKiMcfKqRqGx20Gydw2q6E4kiIZZ7dCc4Pf/AJcRW1ntCot/9S/pTxW4HsZzsLtPbrmG3a4STOZrOeVm495Te4g+XI1o8dyk8SyxOHjcZVhWD/8AP4/2o++tn0L8nt/bSffTySolhFpK8b1IaSgA/9k="
+                    alt="">
+                <div>
+                    <p style="color: #626262;">ikechukwu chinedu</p>
+                    <a onclick="window.location.href='profile.html'" href="profile.html">See your profile</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="user-profile">
+                <i style="color: #626262;" class="fas fa-comment-alt-dots"></i>
+
+                <div style="margin-left: 30px;">
+                    <p style="color: #626262;">Give feedback</p>
+                    <a href="#">Help us to improve our site</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="setting-links">
+                <i style="color: #626262;" class="fas fa-cogs" class="settings-icon"></i>
+                <a style="margin-left: 25px;" href="#">Settings & Privacy <i class="fas fa-arrow-right"
+                        width="10px"></i></a>
+            </div>
+
+            <div class="setting-links">
+                <i style="color: #626262;" class="fas fa-question" class="settings-icon"></i>
+                <a style="margin-left: 25px;" href="#">Help & Support <i class="fas fa-arrow-right"
+                        width="10px"></i></a>
+            </div>
+
+            <div class="setting-links">
+                <i style="color: #626262;" class="fas fa-moon" class="settings-icon"></i>
+                <a style="margin-left: 25px;" href="#">Display & Accessbility <i class="fas fa-arrow-right"
+                        width="10px"></i></a>
+            </div>
+
+            <div class="setting-links">
+                <i style="color: #626262;" class="fas fa-sign-out"></i>
+                <a style="margin-left: 25px;" href="#">Logout <i class="fas fa-arrow-right" width="10px"></i></a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-------mobile menu drop down------------------->
+
+    <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+
+    </div>
+
+
+
+</section>
+
+
+
+<section id="hero"
+    style="background-image: url(https://cdn-images-1.medium.com/max/1600/1*VXIjsea952d1xAbrVtDmKg.gif); height: 300px;">
+    <h4><strong>Sell-Online</strong></h4>
+    <h2><strong>Book More</strong></h2>
+    <h1><strong>Build More Trust And Close More Deals</strong></h1>
+    <p><strong>With Mrteks Store & Enjoy Up To 70% Off </strong></p>
+    <button onclick="window.location.href='shop.html'">Shop Now</button>
+
+</section>
+
+<section id="feature" class="section-p1">
+    <div class="fe-box">
+        <img src="https://media.istockphoto.com/id/165943491/vector/delivery-truck-with-star-ratings-royalty-free-vector-background.jpg?s=612x612&w=0&k=20&c=UworeINbRrPmia0CgXM2i1smOIgYS4CcHbqauhuslAc="
+            alt="" style="width: 150px; height: 100px;">
+        <h2><strong>free shipping</strong></h2>
+    </div>
+
+    <div class="fe-box">
+        <img src="https://media.istockphoto.com/id/1240334968/vector/woman-with-headset-is-sitting-at-her-computer-and-talking-with-client-clients-assistance.jpg?s=612x612&w=0&k=20&c=_D55jbXADXoFXwQ6WN9gqbqtvKDZLKvmiK8ZA9nbgJM="
+            alt="" style="width: 150px; height: 100px;">
+        <h2>24/7 Support</h2>
+    </div>
+
+    <div class="fe-box">
+        <img src="https://thumbs.dreamstime.com/b/pay-pal-vector-illustration-hand-payment-werless-visa-card-terminal-icon-logo-web-site-electronic-money-pay-pal-vector-194595333.jpg"
+            alt="" style="width: 150px; height: 100px;">
+        <h2>Save Money</h2>
+    </div>
+
+    <div class="fe-box">
+        <img src="https://media.istockphoto.com/id/1157459058/photo/young-woman-with-shopping-bags-riding-trolley.jpg?s=612x612&w=0&k=20&c=nTjWjCed_gUe0OnpHG3IlCOc6QqYDTdXkf3Asu0RtNY="
+            alt="" style="width: 150px; height: 100px;">
+        <h2>Promotions</h2>
+    </div>
+
+    <div class="fe-box">
+        <img src="https://media.istockphoto.com/id/1181692246/vector/happy-people-are-holding-review-stars-over-their-heads-five-stars-rating-customer-review.jpg?s=612x612&w=0&k=20&c=oqkpEZoLRTcx2CZVTU4DU21UdqRCmluxfDwS6AGnsK8="
+            alt="" style="width: 150px; height: 100px;">
+        <h2>Happy Sell</h2>
+    </div>
+
+    <div class="fe-box">
+        <img src="https://media.istockphoto.com/id/1255236227/photo/customer.jpg?s=612x612&w=0&k=20&c=jEGLUODjldGK_8qXKvxkqkxKkrors-f0agoDdt0TG_U="
+            alt="" style="width: 150px; height: 100px;">
+        <h2>Online Order</h2>
+    </div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="https://media.istockphoto.com/id/1360714610/photo/green-check-mark-icon-in-a-box-3d-render.jpg?s=612x612&w=0&k=20&c=gRuJ0vJ5svs96A6NXfqRrP-GArXPf-nEi9UY6yQo_iE="
+                alt="" style="width: 100px;  height: 150px; border-radius: 50%;">
+            <h2>thank you</h2>
+            <p>Your details has been successfully submitted.thanks!</p>
+            <button type="button" onclick="closePopup()">ok</button>
+        </div>
+    </div>
+
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+
+         function closePopup() {
+                popup.classList.remove("open-popup");
+            }
+    </script>
+</body>
+</html>
